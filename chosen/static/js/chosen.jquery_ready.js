@@ -3,9 +3,6 @@
         $(".chzn-select").each(function(i, select) {
             var $select = $(select);
 
-            // Set overflow:visible on parent .form-row for django admin
-            $select.parents('.form-row').css('overflow', 'visible');
-
             if (typeof grappelli == 'object') {
                 // Set overflow:visible on grappelli fieldset.module .row
                 $select.parents('.row').filter(function(i) {

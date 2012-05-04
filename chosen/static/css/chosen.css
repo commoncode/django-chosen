@@ -388,3 +388,18 @@
   padding: 4px 5px 4px 20px;
 }
 /* @end */
+
+/* Use sane float clearing, instead of overflow: hidden */
+fieldset .grp-row:before, fieldset .grp-row:after {
+    content: '';
+    display: table;
+}
+fieldset .grp-row {
+    overflow: visible !important;
+}
+fieldset .grp-row:after {
+    clear: both;
+}
+fieldset .grp-row { display: inline-block; }
+fieldset .grp-row { display: block; }
+
