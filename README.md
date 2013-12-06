@@ -5,16 +5,24 @@ django-chosen
 the [Chosen javascript plugin](http://harvesthq.github.com/chosen/). It was
 created by developers at [The Atlantic](http://www.theatlantic.com/).
 
+Note that there is a select field library with even more features available at
+[https://github.com/theatlantic/django-select2-forms](https://github.com/theatlantic/django-select2-forms).
+Most implementation work will go towards django-select2-forms.
+
 Installation
 ------------
 
 The recommended way to install from source is with pip:
 
-        $ pip install -e git+git://github.com/theatlantic/django-chosen.git#egg=django-chosen
+        pip install -e "git+https://github.com/theatlantic/django-chosen.git#egg=django-chosen"
 
 If the source is already checked out, use setuptools:
 
-        $ python setup.py install
+        python setup.py develop
+
+or, you can install from pypi:
+
+        pip install django-chosen
 
 Usage
 -----
